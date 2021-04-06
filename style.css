@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
 :root {
-  --primary-color: #cbc6db;
-  --secondary-color: #072e18;
-  --light-color: #182666;
+  --primary-color: #fffefe;
+  --secondary-color: #0c101f;
+  --light-color: #060a1a;
+  --popup-primary: rgb(209, 209, 214);
+  --popup-color: rgba(253, 253, 253, 0.445);
+  --popup-shadow: rgba(253, 253, 253, 0.1);
 }
 .dark,
 .dark * {
   --primary-color: #0f0909;
-  --secondary-color: #b4a3a3;
-  --light-color: #c5b4b4;
+  --secondary-color: #e4e0e0;
+  --light-color: #ebe6e6;
+  --popup-primary: #282829;
+  --popup-color: rgba(0, 0, 0, 0.603);
+  --popup-shadow: rgba(0, 0, 0, 0.514);
 }
 
 * {
@@ -112,7 +118,7 @@ h3 {
 }
 
 .popup-container {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--popup-color);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -124,9 +130,9 @@ h3 {
 }
 
 .popup {
-  background-color: var(--secondary-color);
+  background-color: var(--popup-primary);
   border-radius: 5px;
-  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 10px 3px var(--popup-shadow);
   padding: 20px;
   text-align: center;
 }
@@ -134,7 +140,7 @@ h3 {
 .popup button {
   cursor: pointer;
   background-color: var(--light-color);
-  color: var(--secondary-color);
+  color: var(--popup-primary);
   border: 0;
   margin-top: 20px;
   padding: 12px 20px;
