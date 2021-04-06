@@ -7,7 +7,13 @@
   </head>
   <body>
     <h1>Hangman</h1>
+    <div class="switch">
+      Dark mode:
+      <span class="inner-switch">OFF</span>
+    </div>
+
     <p>Find the hidden word - Press a letter</p>
+
     <div class="game-container">
       <svg height="250" width="200" class="figure-container">
         <!-- rod -->
@@ -43,6 +49,7 @@
     <div class="notification-container" id="notification-container">
       <p>You have already entered this letter</p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

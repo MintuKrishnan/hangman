@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
 :root {
-  --primary-color: #4a2b2b;
-  --secondary-color: #a42222;
-  --light-color: #daa7a7;
+  --primary-color: #cbc6db;
+  --secondary-color: #072e18;
+  --light-color: #182666;
+}
+.dark,
+.dark * {
+  --primary-color: #0f0909;
+  --secondary-color: #b4a3a3;
+  --light-color: #c5b4b4;
 }
 
 * {
@@ -20,6 +26,22 @@ body {
   height: 80vh;
   overflow: hidden;
   margin: 0;
+}
+
+.switch {
+  align-self: flex-end;
+  margin: 0.9375rem;
+}
+.inner-switch {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #555;
+  border-radius: 1.25rem;
+  width: 3.125rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.1875rem;
+  margin-left: 0.3125rem;
 }
 
 h1 {
