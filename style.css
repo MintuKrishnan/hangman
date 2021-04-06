@@ -36,7 +36,10 @@ body {
 
 .switch {
   align-self: flex-end;
-  margin: 0.9375rem;
+  /* margin: 0.9375rem; */
+  top: 3px;
+  position: absolute;
+  right: 3px;
 }
 .inner-switch {
   display: inline-block;
@@ -63,8 +66,6 @@ h3 {
 
 .game-container {
   padding: 20px 30px;
-  position: relative;
-  margin: auto;
   height: 60%;
 
   text-align-last: center;
@@ -73,7 +74,7 @@ h3 {
 .figure-container {
   fill: transparent;
   stroke: var(--light-color);
-  stroke-width: 4px;
+  stroke-width: 7px;
   stroke-linecap: round;
 }
 
@@ -82,12 +83,7 @@ h3 {
 }
 
 .wrong-letters-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
+  height: 10vh;
 }
 
 .wrong-letters-container p {
@@ -97,11 +93,9 @@ h3 {
 .wrong-letters-container span {
   font-size: 30px;
 }
-
-.word {
-  display: flex;
-  position: absolute;
-  bottom: 10px;
+.row {
+  width: 100% !important;
+  align-items: center !important;
 }
 
 .letter {

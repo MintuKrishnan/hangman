@@ -7,15 +7,17 @@
   </head>
   <body>
     <h1>Hangman</h1>
+    <p>Find the hidden word - Press a letter</p>
     <div class="switch">
       Dark mode:
       <span class="inner-switch">OFF</span>
     </div>
 
-    <p>Find the hidden word - Press a letter</p>
-
     <div class="game-container">
-      <svg class="figure-container" style="height: 100%">
+      <div class="row wrong-letters-container">
+        <div id="wrong-letters"></div>
+      </div>
+      <svg class="row figure-container" style="height: 100%">
         <!-- rod -->
         <line x1="60" y1="20" x2="140" y2="20" />
         <line x1="140" y1="20" x2="140" y2="50" />
@@ -32,10 +34,8 @@
         <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
         <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
       </svg>
-      <div class="wrong-letters-container">
-        <div id="wrong-letters"></div>
-      </div>
-      <div class="word" id="word">
+
+      <div class="row word" id="word">
         <input type="text" />
       </div>
     </div>
