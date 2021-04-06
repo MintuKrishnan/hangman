@@ -172,6 +172,9 @@ h3 {
   display: none;
 }
 @media only screen and (max-width: 500px) {
+  body{
+    margin: -8% !important;
+  }
   .keyboard{
     display: flex;
     width: 100%;
