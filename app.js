@@ -111,6 +111,29 @@ window.addEventListener('keypress', (e) => {
   }
 });
 
+$('.alpha').on('click', function () {
+  if (playable) {
+    const letter = $(this).text().toLowerCase();
+    if (letter >= 'a' && letter <= 'z') {
+      if (selectedWord.includes(letter)) {
+        if (!correctLetters.includes(letter)) {
+          correctLetters.push(letter);
+          displayWord();
+        } else {
+          showNotification();
+        }
+      } else {
+        if (!wrongLetters.includes(letter)) {
+          wrongLetters.push(letter);
+          updateWrongLettersElement();
+        } else {
+          showNotification();
+        }
+      }
+    }
+  }
+});
+
 playAgainButton.addEventListener('click', () => {
   playable = true;
   correctLetters.splice(0);
